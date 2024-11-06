@@ -1,0 +1,62 @@
+const Navbar = () => {
+    return (
+        <nav>
+            <div className="logo"><h4>LOGO</h4></div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Skills</a></li>
+            </ul>
+
+            <div className="btns">
+                <span><a href="#">Sign In</a></span>
+                <span><a href="#">Sign Up</a></span>
+            </div>
+        </nav>
+    );
+}
+
+export default Navbar;
+
+import computer from "../images/computer.jpg"
+
+const Header = () => {
+    return (
+        <header>
+            <div className="content">
+                <div className="text-content">
+                    <h5>This is my text you<span> You Should Have </span></h5>
+                    <h1>The Future<br/>of<span>UI UX</span><br/>design</h1>
+                    <p>lorem ipsum is the text of website</p>
+                </div>
+                <div className="image-content">
+                    <img src={computer} alt="computer"></img>
+                    
+
+                </div>
+            </div>
+
+            
+            
+        </header>
+    );
+}
+
+export default Header;
+
+import Navbar from "./Component/Navbar";
+import Header from "./Component/Header";
+import './index.css';
+
+function App() {
+  return (
+    <>
+      <Navbar />   
+      <Header /> 
+    </>
+  );
+}
+
+export default App;
